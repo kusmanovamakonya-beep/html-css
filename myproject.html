@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ead9c5;
+            color: #3b2f2a;
+        }
+
+        nav {
+            background: #5c3e2b;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d7b48a;
+        }
+        header {
+            min-height: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            background: linear-gradient(135deg, #ead9c5, #c69b72);
+            padding: 50px 20px;
+        }
+
+        header p:first-child {
+            color: #765039;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: 60px;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+
+        h1 span {
+            color: #765039;
+        }
+
+        header p {
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .about img {
+             width: 450px;
+             height: 320px;
+             object-fit: cover;
+              border-radius: 25px;
+        }
+
+
+        .about-text {
+             max-width: 500px;
+             text-align: left;
+        }
+
+        .about-text h3 {
+            font-size: 28px;
+             color: #765039;
+        }
+        .about-text p {
+            line-height: 1.6;
+        }
+
+        .button {
+            margin-top: 20px;
+            background: #765039;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #5c3e2b;
+        }
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        section > p {
+            font-size: 18px;
+        }
+
+        .pets {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            width: 230px;
+            background: #f5e8d8;
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #3b2f2a;
+
+            box-shadow: 0 8px 20px rgba(59, 47, 42, 0.2);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.06);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 22px;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+            line-height: 1.5;
+        }
+
+        .care-box {
+            background: #f5e8d8;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 600px;
+            border-radius: 15px;
+        }
+
+        #contact {
+            background: #c69b72;
+            max-width: none;
+        }
+        footer {
+            background: #5c3e2b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#pets">Our Pets</a>
+        <a href="#care">Care Tips</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+    <header id="home">
+
+        <p>WELCOME TO PAWS&LOVE</p>
+
+        <h1>
+            Everything for
+            <span>your best friend.</span>
+        </h1>
+
+        <p>
+            Everything your pet needs, all in one place.
+            Food, toys and accessories made with love.
+        </p>
+
+        <a href="#pets" class="button">
+            See Our Pets
+        </a>
+
+    </header>
+
+    <section id="about">
+
+    <h2>About Paws&Love 🐾</h2>
+
+    <div class="about">
+
+        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1"
+             alt="People with pets">
+
+        <div class="about-text">
+
+            <h3>We care about every pet ❤️</h3>
+
+            <p>
+                Paws&Love is a pet shop created for people
+                who truly love animals. Our goal is to help
+                every pet find a safe, caring and loving home.
+            </p>
+
+            <p>
+                We offer different kinds of pets, including
+                cats, dogs, rabbits and parrots. Every animal
+                deserves attention, proper care and a comfortable
+                place to live.
+            </p>
+
+            <p>
+                Our store is not only about buying a pet.
+                We also want to help new pet owners learn
+                how to take care of their little friends,
+                choose the right food and understand their needs.
+            </p>
+
+            <p>
+                At Paws&Love, we believe that pets are more
+                than animals. They become part of our family,
+                bring happiness into our lives and give us
+                unconditional love.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="pets">
+
+        <h2>Our Pets 🐾</h2>
+
+        <p>Choose your favorite friend</p>
+
+
+        <div class="pets">
+
+
+            <a href="cats.html" class="card">
+
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba">
+
+                <h3>🐱 Cat</h3>
+
+                <p>
+                    Cute, calm and friendly.
+                </p>
+
+            </a>
+
+
+            <a href="dogs.html" class="card">
+
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d">
+
+                <h3>🐶 Dog</h3>
+
+                <p>
+                    Loyal and playful.
+                </p>
+
+            </a>
+
+
+            <a href="rabbit.html" class="card">
+
+                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308">
+
+                <h3>🐰 Rabbit</h3>
+
+                <p>
+                    Small and adorable.
+                </p>
+
+            </a>
+
+
+            <a href="parrot.html" class="card">
+
+                <img src="https://www.indianapoliszoo.com/wp-content/uploads/2024/04/Macaw-Colt-July-2023-1-Kelly-Griese-2048x1365.webp">
+
+                <h3>🦜 Parrot</h3>
+
+                <p>
+                    Colorful and smart.
+                </p>
+
+            </a>
+
+
+        </div>
+
+    </section>
+    <section id="care">
+
+        <h2>Care Tips ❤️</h2>
+
+        <div class="care-box">
+            🥣 Give your pet healthy food.
+        </div>
+
+        <div class="care-box">
+            💧 Always provide fresh water.
+        </div>
+
+        <div class="care-box">
+            ❤️ Give your pet attention and love.
+        </div>
+
+    </section>
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: pawsandlove@gmail.com</p>
+
+        <p>Phone: +7 700 123 45 67</p>
+
+        <p>Astana, Kazakhstan</p>
+
+    </section>
+
+
+    <footer>
+
+        🐾 Paws&Love © 2026
+
+    </footer>
+
+
+</body>
+</html>

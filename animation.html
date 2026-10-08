@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+<body>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f4ff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1{
+            color: #4c564c;
+            animation: title 2s infinite alternate;
+        }
+
+        @keyframes title{
+            form{
+                transform: translateY(0);
+            }
+
+            to{
+                transform: translateY(-10px);
+            }
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+          .box {
+            width: 180px;
+            height: 180px;
+            background-color: #4c56f0;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 20px;
+
+            transition: transform 0.5s, background-color 0.5s;
+        }
+
+        .box:hover {
+            transform: scale(1.15) rotate(5deg);
+            background-color: #7b4cff;
+        }
+
+        .box2 {
+            background-color: #ff6b8a;
+            transition: 0.5s;
+        }
+
+        .box2:hover {
+            transform: translateY(-25px);
+        }
+        .box3 {
+            background-color: #36c98f;
+            transition: 0.5s;
+        }
+
+        .box3:hover {
+            transform: skewX(10deg);
+        }
+
+        button {
+            margin-top: 40px;
+            padding: 15px 30px;
+
+            border: none;
+            border-radius: 30px;
+
+            background-color: #4c56f0;
+            color: white;
+            font-size: 18px;
+
+            cursor: pointer;
+
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #7b4cff;
+        }
+        .circle {
+            width: 70px;
+            height: 70px;
+
+            background-color: #ffbd4a;
+            border-radius: 50%;
+
+            margin: 50px auto;
+
+            animation: move 3s infinite alternate;
+        }
+            @keyframes move {
+            0% {
+                transform: translateX(-150px) rotate(0deg);
+            }
+
+            100% {
+                transform: translateX(150px) rotate(360deg);
+            }
+        }
+    </style>
+    <h1>CSS Transform & Animation</h1>
+    <P>CSS  көмегімен элементтерге әртүрлі анимациялар иен динамикалық эффектілержасауға болады</P>
+
+    <div class="container">
+        <div class="box">Scale+Rotate</div>
+        <div class="box2">Translate</div>
+        <div class="box3">Skew</div>
+    </div>
+    .<button>
+        Hover me!
+    </button>
+
+    <div class="circle"></div>
+</body>
+</html>
